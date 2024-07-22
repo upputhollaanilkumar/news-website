@@ -1,0 +1,434 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.size-iteration {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.size-iteration label {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #1E90FF; /* Blue background */
+    border-bottom: 1px solid #ddd; /* Optional: Light border for better separation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative; /* Required for positioning the dropdown */
+}
+
+nav ul li a,
+nav ul li button {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Profile Button Styling */
+.profile-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.profile-button i {
+    margin-right: 5px;
+}
+
+.profile-button:hover {
+    background-color: #4682b4; /* Darker blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    background-color: #333; /* Background color for dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Darker background on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+}
+
+.news-slider {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+}
+
+.slider-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.left-sidebar {
+    flex: 1.25; /* Adjusted width for better layout */
+    background-color: #e0e0e0;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-sidebar h3 {
+    margin-top: 0;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.left-sidebar ul li a:hover {
+    background-color: #ff7043; /* sunset orange */
+    color: #fff;
+}
+
+.important-links {
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+.scroll-container {
+    position: absolute;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 15s linear infinite;
+}
+
+.scroll-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.scroll-container ul li {
+    margin-bottom: 10px;
+}
+
+.scroll-container ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-container ul li a:hover {
+    background-color: #ff7043; /* sunset orange */
+    color: #fff;
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+.scroll-container:hover {
+    animation-play-state: paused; /* Stop scrolling when hovered */
+}
+
+.right-sidebar {
+    flex: 1.5;
+    background-color: #e0e0e0;
+    padding: 10px;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+    border: 3px solid #333;
+}
+
+.right-sidebar h3 {
+    margin-top: 0;
+}
+
+.right-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.right-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.right-sidebar ul li a:hover {
+    background-color: #ff7043; /* sunset orange */
+    color: #fff;
+}
+
+/* Scroll container for right sidebar */
+.scroll-right-container {
+    max-height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-right-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scroll-up 15s linear infinite; /* Adjust duration as needed */
+}
+
+.scroll-right-container ul li {
+    margin-bottom: 10px;
+}
+
+@keyframes scroll-up {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+/* Pause scrolling when hovered */
+.scroll-right-container:hover ul {
+    animation-play-state: paused;
+}
+
+#newsContent {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.news-article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Specific styles for footer */
+footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: whitesmoke;
+}
+
+footer div {
+    margin-bottom: 20px;
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+footer p, footer a {
+    margin: 5px 0;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 250px;
+    max-width: 80%;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+    .site-footer .copyright-text, .site-footer .social-icons {
+        text-align: center;
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: all .2s linear;
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}
+
+ul li {
+    list-style: none;
+}

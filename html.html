@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNPSC News Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TNPSC News</h1>
+        <div class="header-right">
+            <div class="size-iteration">
+                <label for="sizeRange">Adjust Text Size:</label>
+                <input type="range" id="sizeRange" min="10" max="30" value="16">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search news...">
+                <button onclick="searchNews()">Search</button>
+            </div>
+            <div class="header-person-button">
+                <button onclick="handlePersonButtonClick()">
+                    <i class="fa-solid fa-user"></i> Profile
+                </button>
+        </div>
+    </header>
+
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+         <li class="dropdown">
+                <a href="#">About TNPSC</a>
+                <div class="dropdown-content">
+                    <a href="#">An Introduction To The CSE Exam</a>
+                    <a href="#">Prelims</a>
+                    <a href="#">Mains</a>
+                    <a href="#">Personality Test</a>
+                    <a href="#">Syllabus </a>
+                    <a href="#">Annual Calendar By UPSC-2024</a>
+                    <a href="#">Booklists</a>
+                    <a href="#">Common Myths About The Exam</a>
+                </div>
+            </li>
+       
+            <li class="dropdown">
+                <a href="#">TNPSC Syllabus</a>
+                <div class="dropdown-content">
+                    <a href="#">Syllabus for Group I</a>
+                    <a href="#">Syllabus for Group II</a>
+                    <a href="#">Syllabus for Group III</a>
+                    <a href="#">Syllabus for Group IV</a>
+                    <a href="#">Syllabus for VAO</a>
+                </div>
+            </li>
+        <li><a href="#">TNPSC Results</a></li>
+        <li><a href="#">TNPSC Notifications</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+            <button class="profile-button">
+                <i class="fa-solid fa-user"></i> Candidate_Corner
+            </button>
+            <div class="dropdown-content">
+                <a href="#">New User</a>
+                <a href="#">Registered User</a>
+                <a href="#">Forgot User ID</a>
+                <a href="#">Forgot Password</a>
+                <a href="#">How to Apply</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+    <div class="news-slider">
+        <div class="slider-content" id="sliderContent">
+            <span>Latest Update 1: TNPSC Exam Date Announced!</span>
+            <span>Latest Update 2: Syllabus Revised for Group I Exam!</span>
+            <span>Latest Update 3: New Eligibility Criteria for TNPSC!</span>
+        </div>
+    </div>
+
+    <main>
+        <aside class="left-sidebar">
+            <h3>Exam Dashboard</h3>
+            <ul>
+                <li><a href="#">Upcoming Exams</a></li>
+                <li><a href="#">Ongoing Exams</a></li>
+                <li><a href="#">Past Exams</a></li>
+                <li><a href="#">Results</a></li>
+            </ul>
+
+            <h3>Important Links</h3>
+            <div class="important-links">
+                <div class="scroll-container">
+                    <ul>
+                        <li><a href="#">Notification</a></li>
+                        <li><a href="#">Apply Online</a></li>
+                        <li><a href="#">Hall Ticket Download</a></li>
+                        <li><a href="#">Latest Results/Result Declaration Schedule</a></li>
+                        <li><a href="#">CV / OT (Interviews)</a></li>
+                        <li><a href="#">OMR Answer Sheet - Sample/Instructions</a></li>
+                        <li><a href="#">Counselling / Selection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <section id="newsContent">
+            <article class="news-article">
+                <h2>Article Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+            <article class="news-article">
+                <h2>Article Title 2</h2>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum...</p>
+            </article>
+        </section>
+
+        <aside class="right-sidebar">
+            <h3>What's New</h3>
+            <div class="scroll-right-container">
+                <ul>
+                    <li><span class="calendar-icon">&#128197;</span><a href="#">New Notification 1: TNPSC Exam Date Announced!</a></li>
+                    <li><span class="calendar-icon">&#128197;</span><a href="#">New Notification 2: Syllabus Revised for Group I Exam!</a></li>
+                    <li><span class="calendar-icon">&#128197;</span><a href="#">New Notification 3: New Eligibility Criteria for TNPSC!</a></li>
+                    <li><span class="calendar-icon">&#128197;</span><a href="#">New Notification 4: Latest Results Published!</a></li>
+                </ul>
+            </div>
+            <div class="tnpsc-info">
+                <p>TNPSC (Tamil Nadu Public Service Commission)</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-about">
+            <h3 style="font-size: x-large;color: bisque;margin-bottom: 2%;" >About Us</h3>
+            <p>News Website Name is your go-to source for the latest news, insightful analysis, and in-depth reporting. Our dedicated team of journalists and editors work around the clock to bring you the most current and accurate information from around the globe. Whether it's breaking news, politics, business, technology, sports, or entertainment, we strive to provide you with the news that matters most.</p>
+        </div>
+        <div class="footer-contact">
+            <h3 style="font-size: x-large;color: bisque;margin-bottom: 2%;" >Contact Us</h3>
+            <p>Email: <a href="mailto:sals@newswebsite.com">contact@newswebsite.com</a></p>
+            <p>Phone: 9876543210</p>
+        </div>
+        <div class="footer-subscribe">
+            <h3 style="font-size: x-large;color: bisque;margin-bottom: 2%;" >Subscribe</h3>
+            <input type="email" id="subscribe-email" placeholder="Enter your email">
+            <button onclick="subscribeNewsletter()">Subscribe Now</button>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3 style="font-size: x-large;color: bisque;margin-bottom: 2%;" >Follow Us</h3>
+                <ul class="social-icons">
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>   
+                </ul>
+        </div>
+        <ul>
+        <div class="footer-legal">
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms of Service</a></li>
+           <li><a href="#">Cookie Policy</a></li>
+           <li><p>© <span id="current-year"></span> News Website Name. All Rights Reserved.</p></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
